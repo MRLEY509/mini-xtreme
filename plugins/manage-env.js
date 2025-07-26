@@ -15,7 +15,7 @@ cmd({
     pattern: "antipromote",
     alias: ["adminevents"],
     desc: "Enable or disable admin event notifications",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -37,7 +37,7 @@ cmd({
     pattern: "welcome",
     alias: ["welcomeset"],
     desc: "Enable or disable welcome messages for new members",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -60,7 +60,7 @@ cmd({
     alias: ["prefix"],
     react: "🔧",
     desc: "Change the bot's command prefix.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename,
 }, async (conn, mek, m, { from, args, isCreator, reply }) => {
     if (!isCreator) return reply("*📛 Only the owner can use this command!*");
@@ -79,7 +79,7 @@ cmd({
     alias: ["setmode"],
     react: "💫",
     desc: "Set bot mode to private or public.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename,
 }, async (conn, mek, m, { from, args, isCreator, reply }) => {
     if (!isCreator) return reply("*_ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!_*");
@@ -105,7 +105,7 @@ cmd({
 cmd({
     pattern: "auto-typing",
     description: "Enable or disable auto-typing feature.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -127,7 +127,7 @@ cmd({
     pattern: "mention-reply",
     alias: ["menetionreply", "reply"],
     description: "Set bot status to always online or offline.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -154,7 +154,7 @@ cmd({
     pattern: "always-online",
     alias: ["online"],
     desc: "Enable or disable the always online mode",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -179,7 +179,7 @@ cmd({
     pattern: "auto-recording",
     alias: ["autorecoding"],
     description: "Enable or disable auto-recording feature.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -206,7 +206,7 @@ cmd({
     pattern: "auto-seen",
     alias: ["autostatus"],
     desc: "Enable or disable auto-viewing of statuses",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -231,7 +231,7 @@ cmd({
     pattern: "status-react",
     alias: ["statusreaction"],
     desc: "Enable or disable auto-liking of statuses",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -257,7 +257,7 @@ cmd({
     pattern: "read-message",
     alias: ["autoread"],
     desc: "enable or disable readmessage.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -282,7 +282,7 @@ cmd({
     pattern: "auto-voice",
     alias: ["autovoice"],
     desc: "enable or disable readmessage.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -309,7 +309,7 @@ cmd({
     pattern: "anti-bad",
     alias: ["antibadword"],
     desc: "enable or disable antibad.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -334,7 +334,7 @@ cmd({
     pattern: "auto-sticker",
     alias: ["autosticker"],
     desc: "enable or disable auto-sticker.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -359,7 +359,7 @@ cmd({
     pattern: "auto-reply",
     alias: ["autoreply"],
     desc: "enable or disable auto-reply.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -385,7 +385,7 @@ cmd({
     pattern: "auto-react",
     alias: ["autoreact"],
     desc: "Enable or disable the autoreact feature",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -410,7 +410,7 @@ cmd({
     pattern: "status-reply",
     alias: ["autostatusreply"],
     desc: "enable or disable status-reply.",
-    category: "⚙️ settings",
+    category: "settings",
     filename: __filename
 },    
 async (conn, mek, m, { from, args, isCreator, reply }) => {
@@ -437,7 +437,7 @@ cmd({
   pattern: "antilink",
   alias: ["antilinks"],
   desc: "Enable or disable ANTI_LINK in groups",
-  category: "⛑️ group",
+  category: "group",
   react: "🚫",
   filename: __filename
 }, async (conn, mek, m, { isGroup, isAdmins, isBotAdmins, args, reply }) => {
@@ -464,7 +464,7 @@ cmd({
   pattern: "antilinkkick",
   alias: ["kicklink"],
   desc: "Enable or disable ANTI_LINK_KICK in groups",
-  category: "⛑️ group",
+  category: "group",
   react: "⚠️",
   filename: __filename
 }, async (conn, mek, m, { isGroup, isAdmins, isBotAdmins, args, reply }) => {
@@ -492,7 +492,7 @@ cmd({
   pattern: "deletelink",
   alias: ["linksdelete"],
   desc: "Enable or disable DELETE_LINKS in groups",
-  category: "⛑️ group",
+  category: "group",
   react: "❌",
   filename: __filename
 }, async (conn, mek, m, { isGroup, isAdmins, isBotAdmins, args, reply }) => {
